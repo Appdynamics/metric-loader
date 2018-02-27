@@ -1,0 +1,57 @@
+buildscript {
+	ext {
+		springBootVersion = '1.5.10.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+group = 'com.appdy'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	compile('org.springframework.boot:spring-boot-starter')
+	compile 'org.apache.httpcomponents:httpcomponents-client:4.5.5'
+	compile 'org.springframework:spring-web:4.3.14.RELEASE'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.8.3'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.8.3'
+    compile 'org.yaml:snakeyaml:1.19'
+    compile 'commons-io:commons-io:2.4'
+    compile 'com.google.guava:guava:24.0-jre'
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+build.doLast{
+	copy {
+		from 'src/main/resources'
+		into "build/$project.jar.baseName"
+		include '*.yml*'
+	}
+
+	copy {
+		from 'build/libs'
+		into "build/$project.jar.baseName"
+		include '*.jar'
+	}
+
+	task(zipDist, type: Zip) {
+		archiveName "$project.jar.baseName-$jar.version" + '.zip'
+		destinationDir = file("$buildDir")
+		from("$buildDir")
+		include "$project.jar.baseName/**"
+	}.execute();
+}

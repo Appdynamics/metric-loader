@@ -1,0 +1,26 @@
+- Overall Application Performance|*
+- Overall Application Performance|*|*
+- Business Transaction Performance|Business Transactions|*|*|Calls per Minute
+- Business Transaction Performance|Business Transactions|*|*|Errors per Minute
+- Business Transaction Performance|Business Transactions|*|*|Average Response Time (ms)
+- Business Transaction Performance|Business Transactions|*|*|Average Wait Time (ms)
+- Business Transaction Performance|Business Transactions|*|*|Individual Nodes|*|Calls per Minute
+- Business Transaction Performance|Business Transactions|*|*|Individual Nodes|*|Errors per Minute
+- Business Transaction Performance|Business Transactions|*|*|Individual Nodes|*|Average Response Time (ms)
+- Business Transaction Performance|Business Transactions|*|*|Individual Nodes|*|Average Wait Time (ms)
+- Application Infrastructure Performance|*|Individual Nodes|*|Hardware Resources|CPU|*
+- Application Infrastructure Performance|*|Individual Nodes|*|Hardware Resources|Disks|*|Space Available
+- Application Infrastructure Performance|*|Individual Nodes|*|Hardware Resources|Disks|*|Reads/sec
+- Application Infrastructure Performance|*|Individual Nodes|*|Hardware Resources|Disks|*|Writes/sec
+- Application Infrastructure Performance|*|Individual Nodes|*|Hardware Resources|Memory|*
+- Application Infrastructure Performance|*|Individual Nodes|*|Hardware Resources|Network|Incoming KB/sec
+- Application Infrastructure Performance|*|Individual Nodes|*|Hardware Resources|Network|Outgoing KB/sec
+- Application Infrastructure Performance|*|Individual Nodes|*|JVM|Classes|*
+- Application Infrastructure Performance|*|Individual Nodes|*|JVM|Garbage Collection|*
+- Application Infrastructure Performance|*|Individual Nodes|*|JVM|Memory|Heap|*
+- Application Infrastructure Performance|*|Individual Nodes|*|JVM|Memory|Non-Heap|*
+- Application Infrastructure Performance|*|Individual Nodes|*|JVM|Threads|Current No. of Threads
+- Application Infrastructure Performance|*|Individual Nodes|*|JVM|Garbage Collection|Memory Pools|*|Committed (MB)
+- Application Infrastructure Performance|*|Individual Nodes|*|JVM|Garbage Collection|Memory Pools|*|Current Usage (MB)
+- Backends|*|*
+- Errors|*|*|*
