@@ -5,9 +5,9 @@ BUILD
 1. Make sure that you have java 8 installed
 2. BUILD
 (win)
-gradlew.bat clean install
+gradlew.bat clean build
 (unix)
-./gradlew clean install
+./gradlew clean build
 
 CONFIG
 1. cd build/metric-loader
